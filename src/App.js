@@ -1,12 +1,9 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
-
 import "./HojasEstilo/style.css"
-
 import Inicio from "./Componentes/Inicio"
 import Personaje from "./Componentes/Personaje"
-
 
 import {BrowserRouter, Routes, Route} from "react-router-dom"
 

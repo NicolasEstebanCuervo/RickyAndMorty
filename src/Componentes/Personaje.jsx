@@ -1,8 +1,6 @@
 import React from "react";
 import { useEffect } from "react";
-
 import { unicoPersonaje } from "../Funciones/Funciones";
-
 import { useState } from "react";
 
 function Personaje (){
