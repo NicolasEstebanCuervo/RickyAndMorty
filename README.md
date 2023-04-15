@@ -40,9 +40,9 @@ en las dependencia del proyecto. Para solucionarlo abra la terminal del proyecto
    
 En caso tal de que te interese alguna de las librerias usadas aca te dejo una lista donde puedes encontrarlas:
 
-- Bootstrap: npm install bootstrap
-- Axios: npm install axios
-- React Router Dom: npm install react-router-dom
+- Bootstrap: npm install bootstrap.
+- Axios: npm install axios.
+- React Router Dom: npm install react-router-dom.
    
 ---
 
