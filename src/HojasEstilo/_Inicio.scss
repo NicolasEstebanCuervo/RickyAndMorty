@@ -1,0 +1,33 @@
+.contenedor_principal{
+  display:flex;
+  flex-direction:column;
+  text-align: center;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+
+  .logo{
+    width:100%;
+    max-width:800px;
+  }
+
+  .boton{
+    margin-top: 20px;
+    border-radius: 50px;
+    color: #1E1E1E;
+    border-radius: 20px;
+    padding: 10px 40px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+}
+
+
+@media (max-width: 380px) {
+  .contenedor_principal{
+    .boton{
+      padding: 10px 1%;
+      font-size: 3vw;
+    }
+  }
+}

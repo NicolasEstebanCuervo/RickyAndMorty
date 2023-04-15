@@ -1,0 +1,106 @@
+section{
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+
+  .logo_personaje{
+    width:100%;
+    max-width:700px;
+    margin-bottom: 2%;
+  }
+
+  .contenedor_personaje{
+    display: flex; 
+    align-content: center;
+    padding:10px 20px;
+    color: #fff;
+    background: #16171b;
+
+    .imagen_personaje{
+      margin: 20px;
+    }
+
+    .div_textos{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+      .titulo_personaje{
+        text-align:  center;
+        margin-bottom: 2%;
+      }
+
+      .descripcion{
+        font-size: 35px;
+        color: #B5B5B5;
+      }
+
+      .tipo{
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 1200px) {
+  section{
+
+    .contenedor_personaje{
+      display: flex; 
+      align-content: center;
+      flex-direction: column;
+      padding:10px 20px;
+      color: #fff;
+      background: #16171b;
+      margin-bottom: 100px;
+
+      .imagen_personaje{
+        width:100%;
+        max-width:300px;
+        margin-bottom: 2%;
+        margin: 20px auto;
+      }
+
+      .div_textos{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        .titulo_personaje{
+          text-align:  center;
+          margin-bottom: 2%;
+          font-size:3vw;
+        }
+
+        .descripcion{
+          margin-bottom: 2%;
+          font-size:3vw;
+          color: #B5B5B5;
+        }
+
+        .tipo{
+          margin-bottom: 2%;
+          font-size:3vw;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  section{
+
+    .contenedor_personaje{
+
+      .imagen_personaje{
+        width:100%;
+        max-width:150px;
+        margin-bottom: 2%;
+        margin: 20px auto;
+      }
+    }
+  }    
+}

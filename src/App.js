@@ -1,23 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.min.js';
+
+import "./HojasEstilo/style.css"
+
+import Inicio from "./Componentes/Inicio"
+import Personaje from "./Componentes/Personaje"
+
+
+import {BrowserRouter, Routes, Route} from "react-router-dom"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App bg-dark'>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Inicio></Inicio>}></Route>
+          <Route path='/personaje/:id' element={<Personaje></Personaje>}></Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
